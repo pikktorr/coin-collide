@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>coin.collide</title>
+
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1>coin.collide</h1>
+    <!-- TradingView Widget BEGIN -->
+    <div class="tradingview-widget-container">
+      <div id="tradingview_bbb56"></div>
+      <div class="tradingview-widget-copyright">
+        <a
+          href="https://uk.tradingview.com/symbols/BTCUSD/?exchange=BINANCE"
+          rel="noopener"
+          target="_blank"
+          ><span class="blue-text">BTCUSD Chart</span></a
+        >
+        by TradingView
+      </div>
+      <script
+        type="text/javascript"
+        src="https://s3.tradingview.com/tv.js"
+      ></script>
+      <script type="text/javascript">
+        new TradingView.widget({
+          width: 980,
+          height: 550,
+          // autosize: true,
+          symbol: "BINANCE:BTCUSD",
+          interval: "60",
+          timezone: "Etc/UTC",
+          theme: "dark",
+          style: "1",
+          locale: "uk",
+          toolbar_bg: "#f1f3f6",
+          enable_publishing: false,
+          withdateranges: true,
+          hide_side_toolbar: false,
+          allow_symbol_change: true,
+          watchlist: [
+            "BINANCE:ETHUSD",
+            "BINANCE:BTCUSD",
+            "BINANCE:ADAUSD",
+            "OANDA:USDHUF",
+          ],
+          details: true,
+          container_id: "tradingview_bbb56",
+        });
+      </script>
+    </div>
+    <!-- TradingView Widget END -->
+  </body>
+</html>
